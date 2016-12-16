@@ -242,6 +242,7 @@ static NSTimeInterval const kSelectionDuration = 1.0;
 
 - (void)restart {
     self.pairItems = self.pairItems; //force call setter to rearrange fetched items
+    self.totalMatchesFound = 0;
     [self.collectionView performBatchUpdates:^{
         [self.collectionView reloadItemsAtIndexPaths:self.collectionView.indexPathsForVisibleItems];
     } completion:nil];
