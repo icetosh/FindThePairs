@@ -41,7 +41,7 @@
                                     <action selector="restartButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rS1-iJ-YS4"/>
                                 </connections>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NPO-Tg-lQt">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NPO-Tg-lQt">
                                 <rect key="frame" x="16" y="162" width="343" height="343"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -73,14 +73,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="gZF-iZ-nhV">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="NPO-Tg-lQt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8ES-uX-yG1"/>
                             <constraint firstAttribute="trailing" secondItem="NPO-Tg-lQt" secondAttribute="trailing" constant="16" id="9Sp-UT-amO"/>
+                            <constraint firstItem="gZF-iZ-nhV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AsN-s8-HzE"/>
                             <constraint firstItem="NPO-Tg-lQt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="FPW-U6-Vai"/>
                             <constraint firstItem="Gug-Lx-ojl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="JG4-li-hcZ"/>
                             <constraint firstAttribute="trailing" secondItem="B1D-hI-0Cq" secondAttribute="trailing" constant="16" id="PR2-BJ-iQz"/>
+                            <constraint firstItem="gZF-iZ-nhV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SWv-EZ-KRd"/>
                             <constraint firstItem="lbp-BI-mDK" firstAttribute="top" secondItem="Gug-Lx-ojl" secondAttribute="top" id="UKM-0Q-Yf0"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="B1D-hI-0Cq" secondAttribute="bottom" priority="750" id="Uxg-t8-s6u"/>
                             <constraint firstItem="5eb-Kx-jNT" firstAttribute="leading" secondItem="lbp-BI-mDK" secondAttribute="leading" id="WCE-TO-SAc"/>
@@ -98,6 +104,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="gZF-iZ-nhV" id="TBV-LD-SDi"/>
                         <outlet property="attemptsCountLabel" destination="5eb-Kx-jNT" id="mqb-yr-LiT"/>
                         <outlet property="collectionView" destination="NPO-Tg-lQt" id="QRo-JW-RaZ"/>
                         <outlet property="fadingLabel" destination="B1D-hI-0Cq" id="16m-vD-SvZ"/>

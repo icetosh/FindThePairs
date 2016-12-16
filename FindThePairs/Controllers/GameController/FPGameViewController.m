@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UILabel *attemptsCountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *fadingLabel;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *fadingLabelCenterY;
 @property (nonatomic, strong) FPGameViewControllerDataSource *dataSource;
 @end
@@ -49,7 +50,7 @@
 #pragma mark - FPGameViewControllerDataSource callbacks
 
 - (void)handleDataFetchCompletion {
-    
+    [self.activityIndicator stopAnimating];
 }
 
 - (void)handlePairSelection {
@@ -131,6 +132,7 @@
 
 - (IBAction)restartButtonAction:(UIButton *)sender {
     [self.dataSource restart];
+    self.attemptsCountLabel.text = @"0";
     [self restoreFadingLabelDefaults];
 }
 
