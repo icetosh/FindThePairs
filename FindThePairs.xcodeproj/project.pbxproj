@@ -593,7 +593,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Cleveroad.FindThePairs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ddfa92e1-9e3f-4d2f-bdca-e22560637b0f";
+				PROVISIONING_PROFILE = "d683d26c-fb3c-44a0-99aa-b656b2178c88";
 				PROVISIONING_PROFILE_SPECIFIER = UniversalAdHoc;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
