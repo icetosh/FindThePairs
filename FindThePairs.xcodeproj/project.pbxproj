@@ -16,6 +16,11 @@
 		D9B39D031E04181C00BD3113 /* FPPairItemCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B39D021E04181C00BD3113 /* FPPairItemCVCell.m */; };
 		D9B39D051E04182C00BD3113 /* FPPairItemCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B39D041E04182C00BD3113 /* FPPairItemCVCell.xib */; };
 		D9B39D091E04194A00BD3113 /* FPGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B39D081E04194A00BD3113 /* FPGameViewController.m */; };
+		D9B39D0D1E041B5D00BD3113 /* FPGameViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B39D0C1E041B5D00BD3113 /* FPGameViewControllerDataSource.m */; };
+		D9B39D121E041B9A00BD3113 /* FPPairItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B39D111E041B9A00BD3113 /* FPPairItem.m */; };
+		D9B39D181E04238200BD3113 /* FPPlacesService.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B39D171E04238200BD3113 /* FPPlacesService.m */; };
+		D9B39D1C1E04272B00BD3113 /* FPMappingService.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B39D1B1E04272B00BD3113 /* FPMappingService.m */; };
+		D9B39D211E042EB900BD3113 /* FPGoogleConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B39D201E042EB900BD3113 /* FPGoogleConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,17 @@
 		D9B39D041E04182C00BD3113 /* FPPairItemCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FPPairItemCVCell.xib; path = Views/Cells/CVCells/FPPairItemCVCell.xib; sourceTree = "<group>"; };
 		D9B39D071E04194A00BD3113 /* FPGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPGameViewController.h; path = GameController/FPGameViewController.h; sourceTree = "<group>"; };
 		D9B39D081E04194A00BD3113 /* FPGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPGameViewController.m; path = GameController/FPGameViewController.m; sourceTree = "<group>"; };
+		D9B39D0B1E041B5D00BD3113 /* FPGameViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPGameViewControllerDataSource.h; path = GameController/DataSource/FPGameViewControllerDataSource.h; sourceTree = "<group>"; };
+		D9B39D0C1E041B5D00BD3113 /* FPGameViewControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPGameViewControllerDataSource.m; path = GameController/DataSource/FPGameViewControllerDataSource.m; sourceTree = "<group>"; };
+		D9B39D101E041B9A00BD3113 /* FPPairItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPPairItem.h; path = Models/PairItem/FPPairItem.h; sourceTree = "<group>"; };
+		D9B39D111E041B9A00BD3113 /* FPPairItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPPairItem.m; path = Models/PairItem/FPPairItem.m; sourceTree = "<group>"; };
+		D9B39D131E0420AA00BD3113 /* FindThePairs-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FindThePairs-PrefixHeader.pch"; sourceTree = "<group>"; };
+		D9B39D161E04238200BD3113 /* FPPlacesService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPPlacesService.h; path = Network/PlacesService/FPPlacesService.h; sourceTree = "<group>"; };
+		D9B39D171E04238200BD3113 /* FPPlacesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPPlacesService.m; path = Network/PlacesService/FPPlacesService.m; sourceTree = "<group>"; };
+		D9B39D1A1E04272B00BD3113 /* FPMappingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPMappingService.h; path = Mapping/FPMappingService.h; sourceTree = "<group>"; };
+		D9B39D1B1E04272B00BD3113 /* FPMappingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPMappingService.m; path = Mapping/FPMappingService.m; sourceTree = "<group>"; };
+		D9B39D1F1E042EB900BD3113 /* FPGoogleConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPGoogleConstants.h; path = Common/Constants/FPGoogleConstants.h; sourceTree = "<group>"; };
+		D9B39D201E042EB900BD3113 /* FPGoogleConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPGoogleConstants.m; path = Common/Constants/FPGoogleConstants.m; sourceTree = "<group>"; };
 		DBC3F41307ED1E65A8955F86 /* Pods-FindThePairs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindThePairs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindThePairs/Pods-FindThePairs.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,7 +103,11 @@
 		D9B39CE11E040F8D00BD3113 /* FindThePairs */ = {
 			isa = PBXGroup;
 			children = (
+				D9B39D1D1E042E9600BD3113 /* Common */,
+				D9B39D191E04271300BD3113 /* Mapping */,
+				D9B39D141E04235700BD3113 /* Network */,
 				D9B39CF91E04106500BD3113 /* Controllers */,
+				D9B39D0E1E041B6B00BD3113 /* Models */,
 				D9B39CFE1E04176500BD3113 /* Views */,
 				D9B39CFA1E04106C00BD3113 /* Storyboards */,
 				D9B39CFB1E04107600BD3113 /* Resources */,
@@ -101,6 +121,7 @@
 		D9B39CE21E040F8D00BD3113 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D9B39D131E0420AA00BD3113 /* FindThePairs-PrefixHeader.pch */,
 				D9B39CF31E040F8E00BD3113 /* Info.plist */,
 				D9B39CE31E040F8D00BD3113 /* main.m */,
 			);
@@ -163,8 +184,78 @@
 			children = (
 				D9B39D071E04194A00BD3113 /* FPGameViewController.h */,
 				D9B39D081E04194A00BD3113 /* FPGameViewController.m */,
+				D9B39D0A1E041B3400BD3113 /* DataSource */,
 			);
 			name = GameController;
+			sourceTree = "<group>";
+		};
+		D9B39D0A1E041B3400BD3113 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				D9B39D0B1E041B5D00BD3113 /* FPGameViewControllerDataSource.h */,
+				D9B39D0C1E041B5D00BD3113 /* FPGameViewControllerDataSource.m */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		D9B39D0E1E041B6B00BD3113 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9B39D0F1E041B8500BD3113 /* PairItem */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D9B39D0F1E041B8500BD3113 /* PairItem */ = {
+			isa = PBXGroup;
+			children = (
+				D9B39D101E041B9A00BD3113 /* FPPairItem.h */,
+				D9B39D111E041B9A00BD3113 /* FPPairItem.m */,
+			);
+			name = PairItem;
+			sourceTree = "<group>";
+		};
+		D9B39D141E04235700BD3113 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D9B39D151E04235D00BD3113 /* PlacesService */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		D9B39D151E04235D00BD3113 /* PlacesService */ = {
+			isa = PBXGroup;
+			children = (
+				D9B39D161E04238200BD3113 /* FPPlacesService.h */,
+				D9B39D171E04238200BD3113 /* FPPlacesService.m */,
+			);
+			name = PlacesService;
+			sourceTree = "<group>";
+		};
+		D9B39D191E04271300BD3113 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				D9B39D1A1E04272B00BD3113 /* FPMappingService.h */,
+				D9B39D1B1E04272B00BD3113 /* FPMappingService.m */,
+			);
+			name = Mapping;
+			sourceTree = "<group>";
+		};
+		D9B39D1D1E042E9600BD3113 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D9B39D1E1E042E9F00BD3113 /* Constants */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		D9B39D1E1E042E9F00BD3113 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D9B39D1F1E042EB900BD3113 /* FPGoogleConstants.h */,
+				D9B39D201E042EB900BD3113 /* FPGoogleConstants.m */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,8 +398,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B39D1C1E04272B00BD3113 /* FPMappingService.m in Sources */,
+				D9B39D211E042EB900BD3113 /* FPGoogleConstants.m in Sources */,
 				D9B39D091E04194A00BD3113 /* FPGameViewController.m in Sources */,
 				D9B39CE71E040F8E00BD3113 /* FPAppDelegate.m in Sources */,
+				D9B39D121E041B9A00BD3113 /* FPPairItem.m in Sources */,
+				D9B39D0D1E041B5D00BD3113 /* FPGameViewControllerDataSource.m in Sources */,
+				D9B39D181E04238200BD3113 /* FPPlacesService.m in Sources */,
 				D9B39CE41E040F8D00BD3113 /* main.m in Sources */,
 				D9B39D031E04181C00BD3113 /* FPPairItemCVCell.m in Sources */,
 			);
@@ -432,6 +528,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TS4L5392F8;
+				GCC_PREFIX_HEADER = "FindThePairs/Supporting Files/FindThePairs-PrefixHeader.pch";
 				INFOPLIST_FILE = "FindThePairs/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -449,6 +546,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = TS4L5392F8;
+				GCC_PREFIX_HEADER = "FindThePairs/Supporting Files/FindThePairs-PrefixHeader.pch";
 				INFOPLIST_FILE = "FindThePairs/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

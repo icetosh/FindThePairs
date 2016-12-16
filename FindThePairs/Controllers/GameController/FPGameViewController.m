@@ -7,22 +7,27 @@
 //
 
 #import "FPGameViewController.h"
+#import "FPGameViewControllerDataSource.h"
 
 @interface FPGameViewController ()
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UILabel *attemptsCountLabel;
+@property (nonatomic, strong) FPGameViewControllerDataSource *dataSource;
 @end
 
 @implementation FPGameViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    @weakify(self);
+    self.dataSource = [FPGameViewControllerDataSource dataSourceWithCollectionView:self.collectionView
+                                                           fetchCompletionCallback:^{
+                                                               
+                                                           } itemSelectCallback:^{
+                                                               @strongify(self);
+                                                               self.attemptsCountLabel.text = [NSString stringWithFormat:@"%@", @(self.attemptsCountLabel.text.integerValue + 1)];
+                                                           }];
 }
 
 

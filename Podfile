@@ -5,4 +5,5 @@ target 'FindThePairs' do
 pod 'SDWebImage'
 pod 'Fabric'
 pod 'Crashlytics'
+pod 'libextobjc'
 end

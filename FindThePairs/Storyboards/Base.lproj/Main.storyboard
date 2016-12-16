@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FPViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FPGameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -38,9 +38,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NPO-Tg-lQt">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NPO-Tg-lQt">
                                 <rect key="frame" x="16" y="162" width="343" height="343"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="NPO-Tg-lQt" secondAttribute="height" multiplier="1:1" id="tEt-7f-AZy"/>
                                 </constraints>
@@ -65,7 +65,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="NPO-Tg-lQt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8ES-uX-yG1"/>
                             <constraint firstAttribute="trailing" secondItem="NPO-Tg-lQt" secondAttribute="trailing" constant="16" id="9Sp-UT-amO"/>
@@ -82,6 +82,10 @@
                             <constraint firstItem="NPO-Tg-lQt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vj6-jb-7Aw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="attemptsCountLabel" destination="5eb-Kx-jNT" id="mqb-yr-LiT"/>
+                        <outlet property="collectionView" destination="NPO-Tg-lQt" id="QRo-JW-RaZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

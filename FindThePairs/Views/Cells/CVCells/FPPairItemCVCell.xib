@@ -40,6 +40,9 @@
                     <integer key="value" value="2"/>
                 </userDefinedRuntimeAttribute>
             </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="imageView" destination="NAM-cF-DO1" id="Ii6-nh-mil"/>
+            </connections>
             <point key="canvasLocation" x="-87" y="74"/>
         </collectionViewCell>
     </objects>

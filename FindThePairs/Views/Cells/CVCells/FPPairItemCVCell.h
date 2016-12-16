@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+@class FPPairItem;
 @interface FPPairItemCVCell : UICollectionViewCell
-
+- (void)configureWithPairItem:(FPPairItem *)pairItem;
 @end
