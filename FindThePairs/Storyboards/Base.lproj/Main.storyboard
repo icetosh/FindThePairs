@@ -37,6 +37,9 @@
                                         <integer key="value" value="22"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="restartButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rS1-iJ-YS4"/>
+                                </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NPO-Tg-lQt">
                                 <rect key="frame" x="16" y="162" width="343" height="343"/>

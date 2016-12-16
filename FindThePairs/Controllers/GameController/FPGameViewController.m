@@ -17,18 +17,50 @@
 
 @implementation FPGameViewController
 
+#pragma mark - Lifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     @weakify(self);
     self.dataSource = [FPGameViewControllerDataSource dataSourceWithCollectionView:self.collectionView
                                                            fetchCompletionCallback:^{
-                                                               
-                                                           } itemSelectCallback:^{
                                                                @strongify(self);
-                                                               self.attemptsCountLabel.text = [NSString stringWithFormat:@"%@", @(self.attemptsCountLabel.text.integerValue + 1)];
+                                                               [self handleDataFetchCompletion];
+                                                           } pairSelectCallback:^{
+                                                               @strongify(self);
+                                                               [self handlePairSelection];
+                                                           } pairMatchCallback:^{
+                                                               @strongify(self);
+                                                               [self handlePairMatch];
+                                                           } gameOverCallback:^{
+                                                               @strongify(self);
+                                                               [self handleGameOver];
                                                            }];
 }
 
+#pragma mark - FPGameViewControllerDataSource callbacks
+
+- (void)handleDataFetchCompletion {
+    
+}
+
+- (void)handlePairSelection {
+    
+}
+
+- (void)handlePairMatch {
+    
+}
+
+- (void)handleGameOver {
+    
+}
+
+#pragma mark - IBActions
+
+- (IBAction)restartButtonAction:(UIButton *)sender {
+    [self.dataSource restart];
+}
 
 @end

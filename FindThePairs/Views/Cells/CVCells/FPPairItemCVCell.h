@@ -11,4 +11,5 @@
 @class FPPairItem;
 @interface FPPairItemCVCell : UICollectionViewCell
 - (void)configureWithPairItem:(FPPairItem *)pairItem;
+- (void)markAsMatched;
 @end

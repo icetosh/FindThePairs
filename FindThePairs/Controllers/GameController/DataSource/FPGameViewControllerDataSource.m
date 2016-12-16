@@ -18,8 +18,10 @@ static NSTimeInterval const kSelectionDuration = 1.0;
 
 @interface FPGameViewControllerDataSource () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong) UICollectionView *collectionView;
-@property (nonatomic, copy) FPGameViewControllerDataSourceEmptyCallback itemSelectCallback;
 @property (nonatomic, copy) FPGameViewControllerDataSourceEmptyCallback fetchCompletionCallback;
+@property (nonatomic, copy) FPGameViewControllerDataSourceEmptyCallback pairSelectCallback;
+@property (nonatomic, copy) FPGameViewControllerDataSourceEmptyCallback pairMatchCallback;
+@property (nonatomic, copy) FPGameViewControllerDataSourceEmptyCallback gameOverCallback;
 @property (nonatomic, strong) NSArray <FPPairItem *> *pairItems;
 @end
 
@@ -28,17 +30,27 @@ static NSTimeInterval const kSelectionDuration = 1.0;
 
 + (FPGameViewControllerDataSource *)dataSourceWithCollectionView:(UICollectionView *)collectionView
                                          fetchCompletionCallback:(FPGameViewControllerDataSourceEmptyCallback)fetchCompletionCallback
-                                              itemSelectCallback:(FPGameViewControllerDataSourceEmptyCallback)itemSelectCallback {
-    return [[self alloc] initWithCollectionView:collectionView fetchCompletionCallback:fetchCompletionCallback itemSelectCallback:itemSelectCallback];
+                                              pairSelectCallback:(FPGameViewControllerDataSourceEmptyCallback)pairSelectCallback
+                                               pairMatchCallback:(FPGameViewControllerDataSourceEmptyCallback)pairMatchCallback
+                                                gameOverCallback:(FPGameViewControllerDataSourceEmptyCallback)gameOverCallback {
+    return [[self alloc] initWithCollectionView:collectionView
+                        fetchCompletionCallback:fetchCompletionCallback
+                             pairSelectCallback:pairSelectCallback
+                              pairMatchCallback:pairMatchCallback
+                               gameOverCallback:gameOverCallback];
 }
 
 - (instancetype)initWithCollectionView:(UICollectionView *)collectionView
                fetchCompletionCallback:(FPGameViewControllerDataSourceEmptyCallback)fetchCompletionCallback
-                    itemSelectCallback:(FPGameViewControllerDataSourceEmptyCallback)itemSelectCallback {
+                    pairSelectCallback:(FPGameViewControllerDataSourceEmptyCallback)pairSelectCallback
+                     pairMatchCallback:(FPGameViewControllerDataSourceEmptyCallback)pairMatchCallback
+                      gameOverCallback:(FPGameViewControllerDataSourceEmptyCallback)gameOverCallback {
     self = [super init];
     if (self) {
         self.collectionView = collectionView;
-        self.itemSelectCallback = itemSelectCallback;
+        self.pairSelectCallback = pairSelectCallback;
+        self.pairMatchCallback = pairMatchCallback;
+        self.gameOverCallback = gameOverCallback;
         self.fetchCompletionCallback = fetchCompletionCallback;
         [self configureCollectionView];
         [self fetchDataWithRadius:kGoogleDefaultSearchRadius];
@@ -85,6 +97,8 @@ static NSTimeInterval const kSelectionDuration = 1.0;
                                   }];
 }
 
+#pragma mark - Setters
+
 - (void)setPairItems:(NSArray<FPPairItem *> *)pairItems {
     //randomize items arrangement
     NSMutableArray *randomOrderedArray = [pairItems mutableCopy];
@@ -116,11 +130,16 @@ static NSTimeInterval const kSelectionDuration = 1.0;
         if (self.itemSelectCallback) {
             self.itemSelectCallback();
         }
-        for (NSIndexPath *indexPath in selectedIndexPaths) {
-            [collectionView deselectItemAtIndexPath:indexPath animated:YES];
-        }
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(kSelectionDuration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            BOOL matchFount = [self.pairItems[selectedIndexPaths.firstObject.row] isEqual:self.pairItems[selectedIndexPaths.lastObject.row]];
+            for (NSIndexPath *indexPath in selectedIndexPaths) {
+                [collectionView deselectItemAtIndexPath:indexPath animated:YES];
+                if (matchFount) {
+                    FPPairItemCVCell *cell = (FPPairItemCVCell *)[collectionView cellForItemAtIndexPath:indexPath];
+                    [cell markAsMatched];
+                }
+            }
             collectionView.userInteractionEnabled = YES;
         });
     }
@@ -135,6 +154,15 @@ static NSTimeInterval const kSelectionDuration = 1.0;
     CGFloat width = CGRectGetWidth(collectionView.frame) / kItemsInColumnCount - padding;
     CGFloat height = width;
     return CGSizeMake(width, height);
+}
+
+#pragma mark - Public
+
+- (void)restart {
+    self.pairItems = self.pairItems; //force call setter to rearrange fetched items
+    [self.collectionView performBatchUpdates:^{
+        [self.collectionView reloadItemsAtIndexPaths:self.collectionView.indexPathsForVisibleItems];
+    } completion:nil];
 }
 
 @end

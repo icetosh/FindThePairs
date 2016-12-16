@@ -13,5 +13,9 @@ typedef void(^FPGameViewControllerDataSourceEmptyCallback)();
 @interface FPGameViewControllerDataSource : NSObject
 + (FPGameViewControllerDataSource *)dataSourceWithCollectionView:(UICollectionView *)collectionView
                                          fetchCompletionCallback:(FPGameViewControllerDataSourceEmptyCallback)fetchCompletionCallback
-                                              itemSelectCallback:(FPGameViewControllerDataSourceEmptyCallback)itemSelectCallback;
+                                              pairSelectCallback:(FPGameViewControllerDataSourceEmptyCallback)pairSelectCallback
+                                              pairMatchCallback:(FPGameViewControllerDataSourceEmptyCallback)pairMatchCallback
+                                                gameOverCallback:(FPGameViewControllerDataSourceEmptyCallback)gameOverCallback;
+
+- (void)restart;
 @end
