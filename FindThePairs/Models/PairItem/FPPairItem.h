@@ -6,11 +6,14 @@
 //  Copyright © 2016 Nick Prokopiev. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface FPPairItem : NSObject
 @property (nonatomic, readonly) NSString *pairItemId;
 @property (nonatomic, readonly) NSURL *pairItemPreviewUrl;
+@property (nonatomic, readonly) UIColor *itemColor;
 
-+ (FPPairItem *)pairItemWithId:(NSString *)pairItemId pairItemPreviewUrl:(NSURL *)pairItemPreviewUrl;
++ (FPPairItem *)pairItemWithId:(NSString *)pairItemId
+            pairItemPreviewUrl:(NSURL *)pairItemPreviewUrl
+                     itemColor:(UIColor *)itemColor;
 @end

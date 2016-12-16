@@ -24,6 +24,7 @@ static NSTimeInterval const kSelectionDuration = 1.0;
 @property (nonatomic, copy) FPGameViewControllerDataSourceEmptyCallback pairMatchCallback;
 @property (nonatomic, copy) FPGameViewControllerDataSourceEmptyCallback gameOverCallback;
 @property (nonatomic, copy) FPGameViewControllerDataSourceEmptyCallback pairNotMatchCallback;
+@property (nonatomic, copy) FPGameViewControllerDataSourceEmptyCallback errorCallback;
 
 @property (nonatomic, strong) NSArray <FPPairItem *> *pairItems;
 @property (nonatomic, assign) NSInteger totalMatchesFound;
@@ -39,7 +40,8 @@ static NSTimeInterval const kSelectionDuration = 1.0;
                                               pairSelectCallback:(FPGameViewControllerDataSourceEmptyCallback)pairSelectCallback
                                                pairMatchCallback:(FPGameViewControllerDataSourceEmptyCallback)pairMatchCallback
                                             pairNotMatchCallback:(FPGameViewControllerDataSourceEmptyCallback)pairNotMatchCallback
-                                                gameOverCallback:(FPGameViewControllerDataSourceEmptyCallback)gameOverCallback {
+                                                gameOverCallback:(FPGameViewControllerDataSourceEmptyCallback)gameOverCallback
+                                                   errorCallback:(FPGameViewControllerDataSourceEmptyCallback)errorCallback {
     NSAssert(collectionView != nil, @"FPGameViewControllerDataSource collectionView can not be nil.");
     NSAssert(fetchCompletionCallback != nil, @"FPGameViewControllerDataSource fetchCompletionCallback can not be nil.");
     NSAssert(pairSelectCallback != nil, @"FPGameViewControllerDataSource fetchCompletionCallback can not be nil.");
@@ -51,7 +53,8 @@ static NSTimeInterval const kSelectionDuration = 1.0;
                              pairSelectCallback:pairSelectCallback
                               pairMatchCallback:pairMatchCallback
                            pairNotMatchCallback:pairNotMatchCallback
-                               gameOverCallback:gameOverCallback];
+                               gameOverCallback:gameOverCallback
+                                  errorCallback:errorCallback];
 }
 
 - (instancetype)initWithCollectionView:(UICollectionView *)collectionView
@@ -59,12 +62,8 @@ static NSTimeInterval const kSelectionDuration = 1.0;
                     pairSelectCallback:(FPGameViewControllerDataSourceEmptyCallback)pairSelectCallback
                      pairMatchCallback:(FPGameViewControllerDataSourceEmptyCallback)pairMatchCallback
                   pairNotMatchCallback:(FPGameViewControllerDataSourceEmptyCallback)pairNotMatchCallback
-                      gameOverCallback:(FPGameViewControllerDataSourceEmptyCallback)gameOverCallback {
-    NSAssert(fetchCompletionCallback != nil, @"fetchCompletionCallback can not be nil.");
-    NSAssert(pairSelectCallback != nil, @"fetchCompletionCallback can not be nil.");
-    NSAssert(pairMatchCallback != nil, @"fetchCompletionCallback can not be nil.");
-    NSAssert(pairNotMatchCallback != nil, @"fetchCompletionCallback can not be nil.");
-    NSAssert(gameOverCallback != nil, @"fetchCompletionCallback can not be nil.");
+                      gameOverCallback:(FPGameViewControllerDataSourceEmptyCallback)gameOverCallback
+                         errorCallback:(FPGameViewControllerDataSourceEmptyCallback)errorCallback{
     self = [super init];
     if (self) {
         self.totalMatchesFound = 0;
@@ -74,6 +73,7 @@ static NSTimeInterval const kSelectionDuration = 1.0;
         self.pairNotMatchCallback = pairNotMatchCallback;
         self.gameOverCallback = gameOverCallback;
         self.fetchCompletionCallback = fetchCompletionCallback;
+        self.errorCallback = errorCallback;
         [self configureLocationManager];
         [self configureCollectionView];
     }
@@ -103,10 +103,6 @@ static NSTimeInterval const kSelectionDuration = 1.0;
     [self.collectionView reloadData];
 }
 
-- (void)configureWithPrefilledData {
-    self.fetchCompletionCallback();
-}
-
 #pragma mark - CLLocationManagerDelegate
 
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
@@ -114,7 +110,7 @@ static NSTimeInterval const kSelectionDuration = 1.0;
         [self.locationManager startUpdatingLocation];
     } else if (status == kCLAuthorizationStatusDenied ||
                status == kCLAuthorizationStatusRestricted) {
-        [self configureWithPrefilledData];
+        [self fetchFakeData];
     }
 }
 
@@ -127,12 +123,36 @@ static NSTimeInterval const kSelectionDuration = 1.0;
 
 - (void)fetchDataWithRadius:(NSInteger)radius {
     @weakify(self);
-    
-    FPPlacesServiceCompletion completion = ^(NSArray<FPPairItem *> *pairItems, NSError *error) {
-        @strongify(self);
+    CGFloat latitude = self.locationManager.location.coordinate.latitude;
+    CGFloat longitude = self.locationManager.location.coordinate.longitude;
+    [FPPlacesService fetchPlacesNearLatitude:latitude
+                                   longitude:longitude
+                                      radius:radius
+                                  completion:^(NSArray<FPPairItem *> *pairItems, NSError *error) {
+                                      @strongify(self);
+                                      [self comlpleteFetchWithItems:pairItems error:error];
+                                  }];
+}
+
+- (void)fetchFakeData {
+    [FPPlacesService fetchFakeLocationPlacesWithCompletion:^(NSArray<FPPairItem *> *pairItems, NSError *error) {
+        if (error) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (self.errorCallback) {
+                    self.errorCallback();
+                }
+            });
+        } else {
+            [self comlpleteFetchWithItems:pairItems error:error];
+        }
+    }];
+}
+
+- (void)comlpleteFetchWithItems:(NSArray<FPPairItem *> *)pairItems error:(NSError *)error {
+    dispatch_async(dispatch_get_main_queue(), ^{
         if (!error) {
             if (pairItems.count < kMinItemsCount) {
-                [self fetchDataWithRadius:radius * 2];
+                [self fetchFakeData];
             } else {
                 self.fetchCompletionCallback();
                 self.pairItems = pairItems;
@@ -142,20 +162,9 @@ static NSTimeInterval const kSelectionDuration = 1.0;
                 }];
             }
         } else {
-            [self configureWithPrefilledData];
+            [self fetchFakeData];
         }
-    };
-    
-    CGFloat latitude = self.locationManager.location.coordinate.latitude;
-    CGFloat longitude = self.locationManager.location.coordinate.longitude;
-    [FPPlacesService fetchPlacesNearLatitude:latitude
-                                   longitude:longitude
-                                      radius:radius
-                                  completion:^(NSArray<FPPairItem *> *pairItems, NSError *error) {
-                                      dispatch_async(dispatch_get_main_queue(), ^{
-                                          completion(pairItems, error);
-                                      });
-                                  }];
+    });
 }
 
 #pragma mark - Setters

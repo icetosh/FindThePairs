@@ -29,6 +29,7 @@
 #pragma mark - Configuration
 
 - (void)configureWithPairItem:(FPPairItem *)pairItem {
+    self.imageView.backgroundColor = [pairItem itemColor];
     [self.imageView sd_setImageWithURL:pairItem.pairItemPreviewUrl];
 }
 

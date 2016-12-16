@@ -45,4 +45,22 @@
     return dataTask;
 }
 
++ (void)fetchFakeLocationPlacesWithCompletion:(FPPlacesServiceCompletion)completion {
+    NSError *jsonError;
+    NSURL *localFileURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"FakeResponse" ofType:@"json"]];
+    NSData *contentOfLocalFile = [NSData dataWithContentsOfURL:localFileURL];
+    NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:contentOfLocalFile
+                                                             options:0
+                                                               error:&jsonError];
+    if (jsonError && completion) {
+        completion(nil, jsonError);
+        return;
+    }
+    NSArray *results = jsonDict[@"results"];
+    NSArray *mappedItems = [FPMappingService mappedPairItemsFromRepresentation:results];
+    if (completion) {
+        completion(mappedItems, nil);
+    }
+}
+
 @end

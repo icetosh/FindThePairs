@@ -12,4 +12,6 @@
 + (UIColor *)fp_pairMatchColor;
 + (UIColor *)fp_pairMatchFailedColor;
 + (UIColor *)fp_gameOverColor;
+
++ (UIColor *)randomColor;
 @end

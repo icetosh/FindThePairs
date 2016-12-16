@@ -1,0 +1,943 @@
+{
+    "html_attributions": [],
+    "next_page_token": "CoQC_wAAAI3tXUwEccu79pO6xSi7QnnM3o-UZgdDla-ZOWrQvttSvBzRmGblkJHqOfmblffprYqQa4ckcbEzWH4eNXv2bVJZNOGbrdzzGdoUKyOC8DduOU2OS5tD7B9WKAGOWKa2x2cSDKmYCPkBVVckvqF72hS8wNS5mr70sdRTwK9CChkhln0dWtmJ2NGFXj35pg69aT1WALJQL6sYsxDyO4-xYKOgfGHve-OT4BWRG88muE4j5a35M4o8GhcU0YDY9lIjLFhexsXTIfyulO6Gthx-7sEVo1oT852-sTo-OUu8D2X27KAkvrR-UPk-xH6SYWj-8cqXGLtQeL8thYiTQf6lyH0SEBhjbfVfrCYYUH_nlm33a_8aFIb8nO515kwSu2BxPGMQdTa9kuNf",
+    "results": [
+    {
+        "geometry": {
+            "location": {
+                "lat": 40.7752738,
+                "lng": -73.96339429999999
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 40.77533445,
+                    "lng": -73.96337154999999
+                },
+                "southwest": {
+                    "lat": 40.77509185,
+                    "lng": -73.96346254999999
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+        "id": "b763e7f0f6ebbb322baf797ca8bd88c4fd04c674",
+        "name": "The Mark",
+        "opening_hours": {
+            "open_now": true,
+            "weekday_text": []
+        },
+        "photos": [
+        {
+            "height": 864,
+            "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104489417862747578827/photos\">The Mark</a>"
+            ],
+            "photo_reference": "CoQBdwAAAMOPK4c-07gSQjhgM0skv-7cK2YBzs1lKXMvcPU1X4Rp_HGI3zYDS7l8SAPOzM4zMJSeX8qCy-DC19GUxYWTHPBpFL02V53q8TKX7GFkgJ8jMS3kFgnV82DVBUfeziIGH9NAjHFK6zOUp_T3Ct72srIpJ2Tzv-dYgUZe7CxdQL8QEhBo7wcJeDvM7cUQ6RcgnXvEGhS9H3JQs9mxaLZflVfSbTG4KxNW9A",
+            "width": 865
+        }
+        ],
+        "place_id": "ChIJXYOiRJRYwokRm1i3c9R6WDA",
+        "rating": 4.5,
+        "reference": "CmRRAAAAe5s-glXLwh9qcvmTZPAiO94JOPE1R_DauHMuWvAxJtCOK9_eLASH9Hh0ruqd2ESOEdYTnJhgLggPQxne5sU92Q3xVDsXWwJeK5KwR67IF7jSBEeE7l_rZCVAxxZWJhOuEhCvzKCAWmIQoE61dAw1dFecGhS7MTIu2Jopun6p05wyaSIctohG_A",
+        "scope": "GOOGLE",
+        "types": [
+        "lodging",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+        ],
+        "vicinity": "25 East 77th Street, New York"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 40.7808622,
+                "lng": -73.9765412
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 40.78092865,
+                    "lng": -73.9762925
+                },
+                "southwest": {
+                    "lat": 40.78066285,
+                    "lng": -73.9766241
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "1d2d0198ea2efdf4610ff4d947f60e9261dad722",
+        "name": "Shake Shack",
+        "opening_hours": {
+            "open_now": true,
+            "weekday_text": []
+        },
+        "photos": [
+        {
+            "height": 4032,
+            "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103667668806899798501/photos\">David Roberts</a>"
+            ],
+            "photo_reference": "CoQBdwAAALnkJD9j_2UjCT5evKTzl60PwLSujOaIx7xBXjE8UTi7ErIwnTXufUio5h9ss6xGo6UEY_c-A52wvbW1zcH9_JKS8ZPMs0u1dk5mMy4cxBCKkOgNIxWAZ8m6zdEtIIcA7NksGWwngH72f14sexCx42_Xu2WbpP7b0CxyXAvt6nLcEhCzBEwU4kw0Wnn38zywPuF0GhQ6yfoyYCwQDEV59BHwn5aal_n0mg",
+            "width": 3024
+        }
+        ],
+        "place_id": "ChIJq3tH0I5YwokRfL6Y8j8E6DM",
+        "price_level": 1,
+        "rating": 4.2,
+        "reference": "CmRRAAAA9UjeHU5dOMDsL2Qb-f6JZ2hIFkVLfFd-lz5X0DDbWsX1aQ-DwXot6jBX0c4r9e6CxQfkJArZTH-scyhl0H3-6UJlqN-CvqArOaDHNsV4S3Ere6KpDOyjb1B_XT8wgmyVEhDjln5kOX3xKg1LJBFEYeWOGhRmo2_v1HUAZQo9GxhlVA-mb9_z0Q",
+        "scope": "GOOGLE",
+        "types": [
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+        ],
+        "vicinity": "366 Columbus Avenue, New York"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 40.7753316,
+                "lng": -73.96875390000001
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "59d6c1d9d3709da7a6440bfd0bd4d02640d7c42f",
+        "name": "The Loeb Boathouse",
+        "opening_hours": {
+            "open_now": false,
+            "weekday_text": []
+        },
+        "photos": [
+        {
+            "height": 1200,
+            "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104111246635874032234/photos\">ZAGAT</a>"
+            ],
+            "photo_reference": "CoQBdwAAAEPCBjVw-HuRWFnNXfPAKIjO6u3DnSztCkyMsfQDR4GemcLxC5p4TNFvmtOXw1Q_-hukHFNKC2eUZLDVz4uwsTcZ3IVldprymHvgJmK1xoqFwHRArb6D_-mOFT84cBjD9g5LH9Q0LQs1TULGjdJKAUS0LtVhx_mae7GAV8vg7c1vEhB2_EbqyejoyEqmuwP3TRYVGhTzBhmlpvg8qBFIrcaSeLFkDpzphg",
+            "width": 1800
+        }
+        ],
+        "place_id": "ChIJm17AB5pYwokRWLJ6lEtXKOA",
+        "price_level": 3,
+        "rating": 4.1,
+        "reference": "CmRSAAAAZ2ZjY9Rg6Z1tQer5EByWRdgAY51CX3ypj_tiSXVTFafaZ1CbxL1YMKbBmfVKQPqZLmZQCQ_ASUzfMK6NFumuEx8SLVy9Bol1fnvZJ_POhUIX113n3hecT2szIlyWbECcEhAfvD1Px6wVx73MbJoKRJaHGhTZIoMOEO6jY9Fu5zpmzfXjoE-8oA",
+        "scope": "GOOGLE",
+        "types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+        ],
+        "vicinity": "East 72nd Street & Park Drive North, New York"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 40.779083,
+                "lng": -73.96443409999999
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+        "id": "396cba36827aa98126eb7f2a3ea56e163c920d2c",
+        "name": "Petrie Court",
+        "opening_hours": {
+            "open_now": true,
+            "weekday_text": []
+        },
+        "photos": [
+        {
+            "height": 2592,
+            "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109619198871676911180/photos\">Phyllis A Sears</a>"
+            ],
+            "photo_reference": "CoQBdwAAADooOdJZ_7muJ1LKT1eutKIYAIObYG6wVUn3FpQrGCM2zvsCJl-mhtLlLDSbjpDhn5CXXf1a77kBXUqNuV_i5w_s2un5tpKnos6Ozec5fQ-WML4dDe4BKeXWsoN3fBt9U7Pbw1_ZvEiKTIFGCXkCS3p5ywVXxc1qi-XIKIPW2T_GEhDVQ8d7-40F6UlDFgAkYoRRGhT4EJ0G7LpV4uss6xgYNDKOe_CRpQ",
+            "width": 1944
+        }
+        ],
+        "place_id": "ChIJXe_x45ZYwokRAFNYj0o6lZA",
+        "price_level": 2,
+        "rating": 3.8,
+        "reference": "CmRSAAAAQx0YUc66OmfIID1xV38ZdijAektHCbwJ_6nvJB5NuSUKPBnk8aotZkOhZXoBjhZ_6xOGTTlNFt_cr3BkZjk2Cs-_tADYjpkZM5zWlQ4vo3IA2p1hsEbUOD7d8jmhnKk6EhCZm8okgDwj-YozEpvXrVWgGhTlXksFI1jeXY6zxNkzrcj8LBuGiA",
+        "scope": "GOOGLE",
+        "types": [
+        "cafe",
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+        ],
+        "vicinity": "1000 5th Avenue, New York"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 40.7831375,
+                "lng": -73.9737009
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 40.7832774,
+                    "lng": -73.97358794999998
+                },
+                "southwest": {
+                    "lat": 40.78271780000001,
+                    "lng": -73.97373855000001
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "dc79b623d3abc10644c21eba7c0baab9328cf662",
+        "name": "Calle Ocho",
+        "opening_hours": {
+            "open_now": false,
+            "weekday_text": []
+        },
+        "photos": [
+        {
+            "height": 2048,
+            "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104111246635874032234/photos\">ZAGAT</a>"
+            ],
+            "photo_reference": "CoQBdwAAAE_1jkbK76mzo3YPFJXF2ILx4p7Sao7D1H_B4FETweGzMf0ELtHLY2O8hDbqc2UmYKHjfPSNJ9FS-JWalGDonCt9cgB7zn-0ZIj2XCFX111eJYcQ3SKUgt0VDkxon_1PVTnSFcL9edBBeOzti80Ez6ZtcnZGCAVoOg3eGg7-KivSEhDjicDZXaxHZrSFyEjlND_rGhQd5xZix3RhGsJjRaMgOtwwCtphVA",
+            "width": 1603
+        }
+        ],
+        "place_id": "ChIJqatDgIVYwokR27LUkzK3itU",
+        "price_level": 2,
+        "rating": 4.2,
+        "reference": "CmRSAAAALiJ8uVdZzfgzV7Q7WS6gSJbMqhn8oIrSnlatJxAY_Q4CJNoK3DXhvvrnWa92-RBadq5MCWOo1iCgPurN0V7CsD1QLorcyk8jzwYK5G20m-erb6toBCJuUJJ4_ckJPhN_EhBNNtewGgwGlifMFicK9VvIGhTRMQLaqdYDH2sfy4Z6Z9fP0tZRCQ",
+        "scope": "GOOGLE",
+        "types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+        ],
+        "vicinity": "45 West 81st Street, New York"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 40.777365,
+                "lng": -73.9616659
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 40.77741999999999,
+                    "lng": -73.96132240000001
+                },
+                "southwest": {
+                    "lat": 40.77720000000001,
+                    "lng": -73.96178040000001
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "0d64df0c84acb57aa64c715ca9db61c921f885a9",
+        "name": "E.A.T.",
+        "opening_hours": {
+            "open_now": true,
+            "weekday_text": []
+        },
+        "photos": [
+        {
+            "height": 3264,
+            "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103954650936423353515/photos\">Claire Lin</a>"
+            ],
+            "photo_reference": "CoQBdwAAADqdlDJ2Dj8NfWopuHBlXCFiKiMmoOUgjGSUGWleD0LFcBjDobZB2FBQWOZxxsRtv5WG3__Wi5wCHJQ0IB98vAZ654-ufUE85RewSfqWA3Tyh3SbFfrwGzNNe8rNjDZHThVV4_BzwjB-orZjEIyLPquslHBYdptMVZFsmJkUzfQGEhBWTe9ZhlXFfT5poYIffPfMGhSz9WRzXk8kH9WPAKJ7MpEX7xi1cg",
+            "width": 2448
+        }
+        ],
+        "place_id": "ChIJ8aQDcJZYwokRyPVIfqjkazY",
+        "price_level": 2,
+        "rating": 3.2,
+        "reference": "CmRRAAAAzBKmiA16Ls5RTN5hcbEfhYQFR301vGMyZfwRRgSisvVFNLkjUp1lm23yc-VR_7rcH9lWKQjIIvSXb8YHl73ku3oj98kn_IJ3MUxXWVhuaDujpbvx49Tf1OEdntb2jrP5EhA-BuFy-kQdc0BINm4JLE3zGhSHpL2-t51eLAU9kopjIizH-BoniA",
+        "scope": "GOOGLE",
+        "types": [
+        "cafe",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+        ],
+        "vicinity": "1064 Madison Avenue, New York"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 40.77804099999999,
+                "lng": -73.978683
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 40.7782942,
+                    "lng": -73.97847329999999
+                },
+                "southwest": {
+                    "lat": 40.77795659999999,
+                    "lng": -73.97875290000002
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+        "id": "8a2b8bd0ed623e08cce7279f0453f756b4f80027",
+        "name": "Alice's Tea Cup",
+        "opening_hours": {
+            "open_now": true,
+            "weekday_text": []
+        },
+        "photos": [
+        {
+            "height": 960,
+            "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105849897031370891450/photos\">Risuna Yuki</a>"
+            ],
+            "photo_reference": "CoQBdwAAAEWzmhwPeCdsH0hkMZ_juDZ-Sryul49W5lmQmMHNW2wBM92RybwjpC5sKCQ4mItnVl-ufjPDoZdUHyflBzngvJtB9JIevVmr8M4IeqfJOkEz2L-0dcNEqhGNT07UKPQ0V703t2d7Tk-BLaQ8ekON-aEovYsGbSqh-D0uMJnZu3rDEhBcaRhlwxPzK561MvvmdmbFGhToPm0FD7KL1nps0--9ECrpJpRy2w",
+            "width": 1600
+        }
+        ],
+        "place_id": "ChIJFUX_0YtYwokRYh_7Fcn3opI",
+        "price_level": 2,
+        "rating": 4.1,
+        "reference": "CmRSAAAAoNZ8v0izvaYkXi_QUje9y9z4aApl1u-ws8WNVL87qdo8FUWYS60Pe_OMZKCIHJ3WQfEs3l8pp7irxv4QJDlRc-1-eWrE7uP4L0lkI_mArH4zczEQjChtfZqRBw3LQKrLEhCJe0ebH18lE7GklPnuoBBfGhQs8I88s8buWVh881fIJjb6eY8fSg",
+        "scope": "GOOGLE",
+        "types": [
+        "bakery",
+        "cafe",
+        "restaurant",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+        ],
+        "vicinity": "102 West 73rd Street, New York"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 40.7730437,
+                "lng": -73.9742981
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "432a1076d1fc57fab0497d8b0a95c3515e7a2d34",
+        "name": "Le Pain Quotidien",
+        "opening_hours": {
+            "open_now": true,
+            "weekday_text": []
+        },
+        "photos": [
+        {
+            "height": 2988,
+            "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101614149442328584869/photos\">Natalia Lardone</a>"
+            ],
+            "photo_reference": "CoQBdwAAAN-2_StqgYOvc3bnuje3rS306gusDaojdHeSj5GnLHZcb8USNMJxDNxgsI75sHXG2bQ5sWsYSuu27GQQk81kT39wyjiVphXFelJK0krXrLpUEmKtmA9ceCP46OBF5sPyZ9lk4ZdqUGWnsva_ujWn_es2NjRPPHqLtfCEVzK_KIRXEhCNHchKSxJRkQJiqG6Gi99UGhSqWeqRGbS_PAaJOx8IYmYTg6bQag",
+            "width": 5312
+        }
+        ],
+        "place_id": "ChIJGWNlKPNYwokR3Cod2THGTNg",
+        "price_level": 2,
+        "rating": 3.7,
+        "reference": "CmRSAAAAY0SvAXx1xaXW3xN4Vv41LbLPrwwZKD_8gPWSLQYHUEDRlI8CsgyPcDZM7emPQHtTsDopxKuN8HKXQBTw4o3w2hGR33KuhxFZQXha3dJyKJHJ7CJi6rfh22XpbTnMLgvbEhCkIjZxJRdETZKEEcGUsMAQGhSHxQ5NmQGNQK0yyk7U2Cxxb74sWQ",
+        "scope": "GOOGLE",
+        "types": [
+        "bakery",
+        "cafe",
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+        ],
+        "vicinity": "2 West 69th Street, New York"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 40.78087839999999,
+                "lng": -73.9765355
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 40.78093084999999,
+                    "lng": -73.97643154999999
+                },
+                "southwest": {
+                    "lat": 40.78072104999998,
+                    "lng": -73.97684735000001
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "5b69e9cd480043371cb68d2dbae331b5a726fde6",
+        "name": "Dovetail",
+        "opening_hours": {
+            "open_now": false,
+            "weekday_text": []
+        },
+        "photos": [
+        {
+            "height": 1366,
+            "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102331131395739989187/photos\">Lia Wong</a>"
+            ],
+            "photo_reference": "CoQBdwAAAE_Dy5KqN23ttazlWWgS8lwxe4iUdNvJK1GYObvI6o_lUcYdX0JpbSGLu67Zm3MPGSuX0QnTyz9CBgOA0eAV6R11wrncdtCYnsyGcCBZscK_ZTG40YXU7XB-w16Sg942KAt96mvIWSQ1udeYoI9fM1bUZQShYN-8wC-uTFeWM827EhBEmo16p0CjXjJVPQ2YEAWsGhQQnmT7KjKq4G2SbKaoM7Hbg0wmgQ",
+            "width": 2048
+        }
+        ],
+        "place_id": "ChIJe0G_0Y5YwokRot6y2kJQWII",
+        "price_level": 4,
+        "rating": 4.4,
+        "reference": "CmRSAAAA8PdIRhADTLRb01OeSCkW8F2qsiXilqlNGx6u7Jx_ZRKsKl_oHKwVOTUi1KRczR3S97glpUSckYhxNMkvNOF4KhhZH_i-PIYfONNL20C-GNi8ui9BpZXCVB8Pd6q2Ea8DEhCGIvDVHNh_1imzDGNiJyhkGhSOdI_WknOqImZJcK1nS9beBHI_fg",
+        "scope": "GOOGLE",
+        "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+        ],
+        "vicinity": "103 West 77th Street, New York"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 40.7804526,
+                "lng": -73.9763572
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 40.780593,
+                    "lng": -73.97627675
+                },
+                "southwest": {
+                    "lat": 40.78040579999999,
+                    "lng": -73.97659855000001
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "214e3e9d9c10f6564503cab3494f017f9fdf8eea",
+        "name": "Isabella's",
+        "opening_hours": {
+            "open_now": true,
+            "weekday_text": []
+        },
+        "photos": [
+        {
+            "height": 2268,
+            "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101521557520382972031/photos\">Alejandro Muyshondt</a>"
+            ],
+            "photo_reference": "CoQBdwAAABqKxegILitRPWbXVD8t1pS85ZlF52WZR3zhw6bZgjktUCVSauai-tje1agoxm1-ZIqdZ2-OUHYRlcYixy3lwlWI5mWgyPm8qanChXNU9iGUbFQ7gq24zYeeJEONfSLtBQqbptzrwrtEV4S1j7oXJN3S_vB63h4CO21f7Ml5cpVzEhDzvjv-nDBT1MuWoNaEkzcRGhRijceSe7upb0zHi20VyLO0vQbPzg",
+            "width": 4032
+        }
+        ],
+        "place_id": "ChIJj4RxxY5YwokRdq8L3lYRtPQ",
+        "price_level": 2,
+        "rating": 4.1,
+        "reference": "CmRSAAAAyCeisH_DQ6BH944yR_NQ4Eah4SUKQv0E1LXN5S-b_aQqwNJwOwyY7GKFKLKvKUeeJ_rTRwII2kmCLlZTrxOWVNmk2E0DXegpeTFoH8NhwtnQ_DJslvu_RhKVtfqY3IJmEhCoDFb4Pp4SDPlb2bK2MkFwGhRpwIOUk1GuhsweG_4KKHHWdegfHA",
+        "scope": "GOOGLE",
+        "types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+        ],
+        "vicinity": "359 Columbus Avenue, New York"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 40.7743924,
+                "lng": -73.9630526
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 40.77447795,
+                    "lng": -73.9629898
+                },
+                "southwest": {
+                    "lat": 40.77413574999999,
+                    "lng": -73.963241
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "1175e1df69103662c0a6844191458903a223c0a0",
+        "name": "THE CARLYLE RESTAURANT",
+        "photos": [
+        {
+            "height": 1200,
+            "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104111246635874032234/photos\">ZAGAT</a>"
+            ],
+            "photo_reference": "CoQBdwAAACLMu7CQ-BSk6EFXWRTLcl8A2IBUomUf_qLExaofhl9VlV7auL-_hI5j2sPLcl3bIwiKiyE72PFDaT_lzrD6X9v_JIWb0wVeAgj2-N47WBforesr_FBpVJplnfCxqxvNE_ku_03eKYHyC7QKYAKmG0GRDkeApLJUToIf4IFiFIhUEhDyd2bm0_A39hrBhQfSD337GhQvufpYdIPkkQfPmjbgfauPa4cKwQ",
+            "width": 1800
+        }
+        ],
+        "place_id": "ChIJEQ6D9pRYwokRTwjCy3odNAY",
+        "price_level": 4,
+        "rating": 4.2,
+        "reference": "CmRRAAAAm21mVnObKT3VxQG6AyfA5pnsqpDE7kFldvFXPprqtGVklYC5HORCEtB6SjVIRLy118p4VH-ROj2QMRSOJJ7_7jGS_5QhG82xynpBM44sScDMjYlNcQLLl0Z78Sg76Mi6EhAu39LH0BL5vgPj5zBGrZBsGhRX-nSv2_7n4ahEZD3DIz7Kj08Frw",
+        "scope": "GOOGLE",
+        "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+        ],
+        "vicinity": "35 East 76th Street, New York"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 40.77821759999999,
+                "lng": -73.96089859999999
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 40.77824124999999,
+                    "lng": -73.9607144
+                },
+                "southwest": {
+                    "lat": 40.77814665,
+                    "lng": -73.96095999999999
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "3e0936dfd18230e8804b98a0719d0ee7733c0298",
+        "name": "Nectar",
+        "opening_hours": {
+            "open_now": true,
+            "weekday_text": []
+        },
+        "photos": [
+        {
+            "height": 2448,
+            "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109591559000719549977/photos\">Jordi Ramoneda i Tuset</a>"
+            ],
+            "photo_reference": "CoQBdwAAANvR8ayAXa7DG3iAkXwiVJLlrLAx1zv6rn_I59Ht_XgYJzJSMMmpDhw2NoFgl2n9U6231kHks9f_SVkhmadfYrWsrklliyHGgpfpet_S_fb5MiImSQjvo6qnkm0rPoiOV2OPkLW7g-UdRaTU_-Xcvar53BaUSaYloub-jAkOi1tAEhBCAjdf6MIMgTtPxvQKmcO_GhTNI8wKCi3-61smiC9XJ7wEdzoTFA",
+            "width": 3264
+        }
+        ],
+        "place_id": "ChIJYSsuP5ZYwokRSjn-MBTQnV0",
+        "price_level": 2,
+        "rating": 3.5,
+        "reference": "CmRRAAAAz8tIUwavBBWdjc49ciHAqKHbyaC_jqwmajQ4qMR4wE_ua5n-v2FCbSQVXG5h9MbJsgyhGqBC-DuUUa_yIQap8nmhA3qDjsa4r-ZFT-zFEGELW-4kw_toHTpX7vPefgu3EhBfWhdDMREp3Q4KftJp2bNdGhRDQjWgV_2ubbtSw0gjLHHfd6WDAA",
+        "scope": "GOOGLE",
+        "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+        ],
+        "vicinity": "1090 Madison Avenue, New York"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 40.7744937,
+                "lng": -73.9640958
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 40.7745304,
+                    "lng": -73.963752
+                },
+                "southwest": {
+                    "lat": 40.77442119999999,
+                    "lng": -73.9642104
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "6d6234b3624c37ec891f401c6de2d295ce031c17",
+        "name": "Cafe Boulud",
+        "opening_hours": {
+            "open_now": false,
+            "weekday_text": []
+        },
+        "photos": [
+        {
+            "height": 4712,
+            "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107948140334391146252/photos\">Cafe Boulud</a>"
+            ],
+            "photo_reference": "CoQBdwAAAMRjVsO5s5S9mHIH2KXQnBs4r6D0cDzlwOO4AtfiTOIxSwfvODsUrwgh6jD_fuyXCvpLFYFODIjpfzFSxeuT4BABewBYsDpXhdICXwvAXNtmMTmsPcsBD008shRyGAYD06mknP91DSH4dV7rT50DXqUXOcXmVnjr9LSCekF7AN8nEhCSJ7GYpw6_ZxMf4n_GoAk-GhRaNDWvvv8CdMYHcRgLZU9iHsxQrw",
+            "width": 6289
+        }
+        ],
+        "place_id": "ChIJCcAxi5RYwokRdUqdw5_FHIk",
+        "price_level": 4,
+        "rating": 4.5,
+        "reference": "CmRSAAAAp3sE1z1Y-7E28kIFdwo8llbhKvh_wueULvX37-DgBZr_08Yb2mdKeBwMWSRzXmVOJa2Vd8lKa2Lcabc9YABTDIgjdAm4fRqQwjlM8RTcTAB79g29ODPZxy7o_j7PsXtJEhCQs8T1AAGIQZLqPt8DUk9qGhTg_tlxtRfYVyFSQn5mNPzx5MmgQA",
+        "scope": "GOOGLE",
+        "types": [
+        "night_club",
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+        ],
+        "vicinity": "20 East 76th Street, New York"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 40.782487,
+                "lng": -73.978509
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 40.78251120000001,
+                    "lng": -73.9783633
+                },
+                "southwest": {
+                    "lat": 40.78245039999999,
+                    "lng": -73.97894609999999
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "bbb48702dd2ba92befd4ae44c907b5cc1e7b27da",
+        "name": "Sugar and Plumm",
+        "opening_hours": {
+            "open_now": true,
+            "weekday_text": []
+        },
+        "photos": [
+        {
+            "height": 2988,
+            "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100838704311552929948/photos\">Edwin Torres</a>"
+            ],
+            "photo_reference": "CoQBdwAAAABJGl7pqWizvOK2mujEU7vFTasdnEyLIi2_MEs5VhKoRPgepnyhxs7B-H7ocg_Yfu0yKhjC1sPWCqJaWAPNwIG4UhRDUM77OdfcNgWrSYfqseawp0Dkd2UNm9SF4qAV-Usj93qFvee0Qjqb6Yjh-wNUilPR9-OB_P1X4PH-fXqFEhCsCnWqsv78LTlBcupJwd0oGhQi5Snh2d4Ve0yiXnMtezLbht1Suw",
+            "width": 5312
+        }
+        ],
+        "place_id": "ChIJk_oL6YhYwokRBzowJwMw4Lg",
+        "price_level": 2,
+        "rating": 4.2,
+        "reference": "CmRSAAAA9rEiCFPgzLehAXO0tSa1X-7pGsnylRSiP4Ds5hezc-yF6JhNMhiJftJPc0lpJzoLMSWhxlE71hOLOmNUUBJLgrAhB_S5WsZrttQXMlryaASsB1nPZctGeUcs3EDdI05TEhBWI9NyhMgh_AY92YOVN5rrGhRhitppH_cYokhIMmuGWWiYVMXwkQ",
+        "scope": "GOOGLE",
+        "types": [
+        "bakery",
+        "restaurant",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+        ],
+        "vicinity": "377 Amsterdam Avenue, New York"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 40.7845765,
+                "lng": -73.97319259999999
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 40.78480195,
+                    "lng": -73.97303479999999
+                },
+                "southwest": {
+                    "lat": 40.78450135,
+                    "lng": -73.97366600000001
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "2a06446ceac55359c7d318479926a16f0bd985fd",
+        "name": "Matsu",
+        "opening_hours": {
+            "open_now": true,
+            "weekday_text": []
+        },
+        "photos": [
+        {
+            "height": 1404,
+            "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104111246635874032234/photos\">ZAGAT</a>"
+            ],
+            "photo_reference": "CoQBdwAAAGZur5HqhPoQb9sRPOldJjuhe4JBQfbp6thhIQPKC5hTx9HCfzHHl84pWnqVVAgs2R2yUBmifOZ6lclNSOVNSAaRMhnIC2hrEH3WXtlvbPj3OvgnNUmBMxPrSxVfJCcYMiXnkJuTo8EfiFrhikBOkdI4rWCpxg6o9nhmiIei6-RJEhDR1n59ni3Fsx9XQ01W-UApGhRJe8OsejWbb4G1Keyho89XhDyk3A",
+            "width": 2048
+        }
+        ],
+        "place_id": "ChIJ5fDdEoVYwokRYPEr9pcE0WQ",
+        "price_level": 2,
+        "rating": 3.4,
+        "reference": "CmRRAAAAd-AA3tYTcV5c6ZUkTPVbqm2A8LjzfdBz7CgYTAPp3BcqEqbU0WQdPqpZbdv5B7XPAF1qT8dWzjV0CgCDtPc7Rt_yQkWPyDlWmKCdDGb2kffXnmj0PLiD2FmwhWUDOOwxEhB6UkZnZQc3syeCdCMFr7KEGhR63IVHjAlqX5S7NoAXz-tYUpOW-w",
+        "scope": "GOOGLE",
+        "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+        ],
+        "vicinity": "483 Columbus Avenue, New York"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 40.779019,
+                "lng": -73.978011
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 40.77907769999999,
+                    "lng": -73.97755335000002
+                },
+                "southwest": {
+                    "lat": 40.7788429,
+                    "lng": -73.97816355
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "f2c5da1c8ae0a0d45b209f1041bb415e3cdac072",
+        "name": "Lenwich",
+        "opening_hours": {
+            "open_now": true,
+            "weekday_text": []
+        },
+        "photos": [
+        {
+            "height": 1241,
+            "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107449979600841701249/photos\">Lenwich</a>"
+            ],
+            "photo_reference": "CoQBdwAAACul6stAjwHkIRROK_iz4nNekNr_D-3dYMwzspyz6EX4fBHJDQ9mtpc3yFhpmkWpu7bzvdwB1ohH0o78WtxZpImALjboN9xt17sHDToWh-6NkJaG4KxJ7y3zEotjxyxbl98Pq-6NYxA12Jkndmwe-IySvi2cMrlL9_9m0VAnNvfyEhDu_r6b6Z1c0YCBmQHivWLdGhRWW1iZhlUigd8zDZW3TCVTQVFOaA",
+            "width": 1242
+        }
+        ],
+        "place_id": "ChIJsahM44tYwokRQ-PqyAtuL2g",
+        "price_level": 1,
+        "rating": 3.9,
+        "reference": "CmRRAAAAamTUE8AyL0KVsDhJz0aTDhVRi5h_zW3DEOIt5N_n64Az9soJicY7P1lL4Uqko0dQ08qccx9763MJETpQQmuU5OW4d8Sv3Xi_3xZWbqacBxigzkbtjwWLt_ZlUPS0gzUxEhA2I-6PD-wbA5CMkwVHt1ZGGhTWThnHWWe-OQfzJZfbZKAbf9N5wQ",
+        "scope": "GOOGLE",
+        "types": [
+        "meal_delivery",
+        "cafe",
+        "restaurant",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+        ],
+        "vicinity": "302 Columbus Avenue, New York"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 40.7726937,
+                "lng": -73.96520630000001
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 40.77273480000002,
+                    "lng": -73.96517609999999
+                },
+                "southwest": {
+                    "lat": 40.7725704,
+                    "lng": -73.9652969
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "58187025ae491f935710d8aea31097394cb79a9b",
+        "name": "Via Quadronno",
+        "opening_hours": {
+            "open_now": true,
+            "weekday_text": []
+        },
+        "photos": [
+        {
+            "height": 1265,
+            "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102307065416230404706/photos\">pellicano guest house</a>"
+            ],
+            "photo_reference": "CoQBdwAAAOXPChQI4kOiQ3rNf5qwZbCbR9Aq-eTPg3z5FmDPv9LkACVggq25OQCvViWNUJZDfgyH3jBw5AZoSz7P_U6MCFTlkl_wgo_GuFd8c4t26jUng-jsSw_6SlnVodtQ9WLbSIxarEX5SJ3uBrTaraNN_SJ3nTWW4iPLLmFSdQ9DB5k_EhAY-nXe0IEhLmiJ-XNU-g7JGhTTrWn3yQaVJ-o2niwEsZ5Ml4zcAg",
+            "width": 949
+        }
+        ],
+        "place_id": "ChIJ-ZWIqZRYwokRQ9ZhSMN8FkI",
+        "price_level": 2,
+        "rating": 4.2,
+        "reference": "CmRRAAAA_seBb26k2jQ_WSfvfJewf_nslCkmzgaKrcgYA4c5ZmO-Is5eGACQUOygpZLLoB74W72ozyRUVYOf0gzpmSmhCKLAQe15vsz5K6V3ao9hM4uuenIHjtLvJDfOiMNpMswwEhCuPF3kDn6gqSiWNnN2EwgFGhRTfAI8QpB3lGIux2txO3RivPouKg",
+        "scope": "GOOGLE",
+        "types": [
+        "cafe",
+        "restaurant",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+        ],
+        "vicinity": "25 East 73rd Street, New York"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 40.7785285,
+                "lng": -73.9807084
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 40.7786447,
+                    "lng": -73.98062254999999
+                },
+                "southwest": {
+                    "lat": 40.7781799,
+                    "lng": -73.98096595
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/cafe-71.png",
+        "id": "507e4d75d4e2b211e43e792b144f85874d29e51d",
+        "name": "Aroma Espresso Bar",
+        "opening_hours": {
+            "open_now": true,
+            "weekday_text": []
+        },
+        "photos": [
+        {
+            "height": 2268,
+            "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110594544100363572882/photos\">Denton Johnson</a>"
+            ],
+            "photo_reference": "CoQBdwAAAA5SgxKY4Zb2-BTxX3xdGStUaNE64YxeeaANM_-hzEa8Zz3n_3Y9XmycU1VAgUyQksBQxwj2E29fe9Zs35E1YqhxvtAuSYBq1YAYrm2eUWpCBKXpsPRyqAJ5evYq2GC6kzmw_sEsaiuSzZad_uizmomjPzK_-PbbfNk7VvBo6jDzEhBl1uiz-j2xB5-BMRvejqImGhSWLvXBQPigWFOrdwMTAOC9ds4B4w",
+            "width": 4032
+        }
+        ],
+        "place_id": "ChIJle_YOYpYwokRb8ybSmOTNBU",
+        "price_level": 1,
+        "rating": 3.9,
+        "reference": "CmRRAAAAbIl0RlMPTLswJ1MEJEOO-T2AiL1YrQ4D5jHOMwYkhG-juvFdWFlFHcdobiYxbKk5mOnHFY1iWVRnlFqfoaSYZlQQ2U5K0dyzcMwNZ5shd2ZlsOe0leDt7RePma3DTB3SEhAmJyho6l_sJDEGWDJ7lIqFGhQNUFtgRJ76TFKkE3nGn6LCtsAasg",
+        "scope": "GOOGLE",
+        "types": [
+        "cafe",
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+        ],
+        "vicinity": "161 West 72nd Street, New York"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 40.78327950000001,
+                "lng": -73.9778724
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 40.7834475,
+                    "lng": -73.97773479999998
+                },
+                "southwest": {
+                    "lat": 40.78322350000001,
+                    "lng": -73.97828520000002
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "2d97356e42af119af23861851e651e637307ca54",
+        "name": "Insomnia Cookies",
+        "opening_hours": {
+            "open_now": true,
+            "weekday_text": []
+        },
+        "photos": [
+        {
+            "height": 3120,
+            "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108909344168398060997/photos\">Boyce Dimaala</a>"
+            ],
+            "photo_reference": "CoQBdwAAACDQ5sJ-r0Akq4SCk0VC6mZ0eSgL4hTi_igLBktCFD0kSILUlt-CZI3vAlbprnh-H103L-WNkoJ0Ne87POXzZuCmVM536ve-jiiHqMWaWEK1BXex7l0LhTi-3OgtsrhV3QTX7WWXaACURqs4HCXN3Kn3ZpkBP_VnDEAtf25nAtyEEhCG8F1tr6UuXXCBIgL2hIhbGhSH9e-VBk9a7q6gKG1pYRivj0G6tw",
+            "width": 4160
+        }
+        ],
+        "place_id": "ChIJH6XFuohYwokRkgJcjHIJbBY",
+        "price_level": 1,
+        "rating": 4.1,
+        "reference": "CmRRAAAAhvyDxUQHDsAAGkMicG0wCoek1qhecFcAk1zH0XM7ea4hvymFPm0-O3at0g11rcZfQFwSlH-QIVPjQrjuWe5ZwwmBkKfiHUQnhTo_orKIDILJuApNr2sJuFrkSTfTUm7dEhD1pW6OubKnNSHefNbBQ079GhRo8CZ5OijSjEs7MyY0VdGtXOCbSA",
+        "scope": "GOOGLE",
+        "types": [
+        "bakery",
+        "restaurant",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+        ],
+        "vicinity": "405 Amsterdam Avenue, New York"
+    },
+    {
+        "geometry": {
+            "location": {
+                "lat": 40.7793255,
+                "lng": -73.97761319999999
+            },
+            "viewport": {
+                "northeast": {
+                    "lat": 40.77937265000001,
+                    "lng": -73.97739195000001
+                },
+                "southwest": {
+                    "lat": 40.77918405,
+                    "lng": -73.97768694999998
+                }
+            }
+        },
+        "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+        "id": "1dd8e5f105a470e3d6de8d903993fe308221d88e",
+        "name": "Pappardella",
+        "opening_hours": {
+            "open_now": true,
+            "weekday_text": []
+        },
+        "photos": [
+        {
+            "height": 683,
+            "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114107074926380908529/photos\">Pappardella</a>"
+            ],
+            "photo_reference": "CoQBdwAAAJN4iSO9KWXXWxYzTYjRL9--3SlrIK4vXR8KFKptujD6HbzcFA08wHhOPramG4QGAA7Sln3Mj_D5-Q0jFCdP8trhYfx0vK2aA1lNOv40gxHOlW59y15eXs8ebfmcFYp8CFruihkgi2T4TV-BVlappXEeoAsSUp0zPHgrrlz_s6EKEhDNINTHd6AsHCT45WUFDWruGhRGwIdC41OmM3z5N49k3-RVt74X9Q",
+            "width": 1024
+        }
+        ],
+        "place_id": "ChIJN2DMVolYwokRZ3RY3IbatuA",
+        "price_level": 2,
+        "rating": 3.9,
+        "reference": "CmRSAAAAfHvJcubzXLVb036HZ1kUvMSt7BjvrBR45TsxfqLrWAcTSHZk1MI8qvyeQw_Kt5BLCMcx81eLxDQU2qhWuXETuaCMVKD2tiB6NxuH_K0we1548P3VEbY8HDtUopL5uy9BEhDqgXbJDKk1BTm2eggjY5iTGhSE1Ccsfi_N1GQyjUun_Lz9Z-KoFQ",
+        "scope": "GOOGLE",
+        "types": [
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+        ],
+        "vicinity": "316 Columbus Avenue, New York"
+    }
+    ],
+    "status": "OK"
+}

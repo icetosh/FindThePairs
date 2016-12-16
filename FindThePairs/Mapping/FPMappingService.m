@@ -9,6 +9,7 @@
 #import "FPMappingService.h"
 #import "FPPairItem.h"
 #import "FPGoogleConstants.h"
+#import "UIColor+FPColors.h"
 
 static NSString *const kResultsSortKey = @"rating";
 static NSString *const kPairItemResponseIdKey = @"place_id";
@@ -34,7 +35,7 @@ NSString *const imageFormedUrl = @"";
         if (!photoUrlString) { //skip items without photo
             continue;
         }
-        FPPairItem *pairItem = [FPPairItem pairItemWithId:pairItemId pairItemPreviewUrl:[NSURL URLWithString:photoUrlString]];
+        FPPairItem *pairItem = [FPPairItem pairItemWithId:pairItemId pairItemPreviewUrl:[NSURL URLWithString:photoUrlString] itemColor:[UIColor randomColor]];
         [mappedItems addObject:pairItem];
         [mappedItems addObject:pairItem];
         if (mappedItems.count == 16) {

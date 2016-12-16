@@ -16,7 +16,8 @@ typedef void(^FPGameViewControllerDataSourceEmptyCallback)();
                                               pairSelectCallback:(FPGameViewControllerDataSourceEmptyCallback)pairSelectCallback
                                                pairMatchCallback:(FPGameViewControllerDataSourceEmptyCallback)pairMatchCallback
                                             pairNotMatchCallback:(FPGameViewControllerDataSourceEmptyCallback)pairNotMatchCallback
-                                                gameOverCallback:(FPGameViewControllerDataSourceEmptyCallback)gameOverCallback;
+                                                gameOverCallback:(FPGameViewControllerDataSourceEmptyCallback)gameOverCallback
+                                                   errorCallback:(FPGameViewControllerDataSourceEmptyCallback)errorCallback;
 
 - (void)restart;
 @end

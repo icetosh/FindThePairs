@@ -23,6 +23,7 @@
 		D9B39D211E042EB900BD3113 /* FPGoogleConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B39D201E042EB900BD3113 /* FPGoogleConstants.m */; };
 		D9B39D251E043FC000BD3113 /* UIView+FPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B39D241E043FC000BD3113 /* UIView+FPAdditions.m */; };
 		D9B39D2A1E0440DB00BD3113 /* UIColor+FPColors.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B39D291E0440DB00BD3113 /* UIColor+FPColors.m */; };
+		D9B39D2E1E044E4700BD3113 /* FakeResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = D9B39D2D1E044E4700BD3113 /* FakeResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		D9B39D241E043FC000BD3113 /* UIView+FPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+FPAdditions.m"; path = "Common/Categories/UIView+FPAdditions.m"; sourceTree = "<group>"; };
 		D9B39D281E0440DB00BD3113 /* UIColor+FPColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+FPColors.h"; path = "Common/Categories/UIColor/UIColor+FPColors.h"; sourceTree = "<group>"; };
 		D9B39D291E0440DB00BD3113 /* UIColor+FPColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+FPColors.m"; path = "Common/Categories/UIColor/UIColor+FPColors.m"; sourceTree = "<group>"; };
+		D9B39D2D1E044E4700BD3113 /* FakeResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FakeResponse.json; sourceTree = "<group>"; };
 		DBC3F41307ED1E65A8955F86 /* Pods-FindThePairs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindThePairs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindThePairs/Pods-FindThePairs.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				D9B39CEE1E040F8E00BD3113 /* Assets.xcassets */,
+				D9B39D2D1E044E4700BD3113 /* FakeResponse.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				D9B39CF21E040F8E00BD3113 /* LaunchScreen.storyboard in Resources */,
 				D9B39CEF1E040F8E00BD3113 /* Assets.xcassets in Resources */,
 				D9B39CED1E040F8E00BD3113 /* Main.storyboard in Resources */,
+				D9B39D2E1E044E4700BD3113 /* FakeResponse.json in Resources */,
 				D9B39D051E04182C00BD3113 /* FPPairItemCVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

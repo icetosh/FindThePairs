@@ -20,4 +20,5 @@ typedef void(^FPPlacesServiceCompletion)(NSArray <FPPairItem *> *pairItems, NSEr
                                         longitude:(CGFloat)longitude
                                            radius:(NSInteger)radius
                                        completion:(FPPlacesServiceCompletion)completion;
++ (void)fetchFakeLocationPlacesWithCompletion:(FPPlacesServiceCompletion)completion;
 @end

@@ -44,6 +44,9 @@
                                                            } gameOverCallback:^{
                                                                @strongify(self);
                                                                [self handleGameOver];
+                                                           } errorCallback:^{
+                                                               @strongify(self);
+                                                               [self handleError];
                                                            }];
 }
 
@@ -89,6 +92,15 @@
                      } completion:nil];
 }
 
+- (void)handleError {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Error", nil)
+                                                                             message:NSLocalizedString(@"Unknown error occured", nil)
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *alertAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Ok", nil) style:UIAlertActionStyleDefault handler:nil];
+    [alertController addAction:alertAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+
 - (void)showFadingLabelWithText:(NSString *)text
                       textColor:(UIColor *)textColor
                     shouldShake:(BOOL)shouldShake
@@ -125,7 +137,6 @@
                          self.fadingLabel.alpha = 0.f;
                          [self.view layoutIfNeeded];
                      } completion:nil];
-
 }
 
 #pragma mark - IBActions
