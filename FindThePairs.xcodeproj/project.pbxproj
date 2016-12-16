@@ -21,6 +21,8 @@
 		D9B39D181E04238200BD3113 /* FPPlacesService.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B39D171E04238200BD3113 /* FPPlacesService.m */; };
 		D9B39D1C1E04272B00BD3113 /* FPMappingService.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B39D1B1E04272B00BD3113 /* FPMappingService.m */; };
 		D9B39D211E042EB900BD3113 /* FPGoogleConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B39D201E042EB900BD3113 /* FPGoogleConstants.m */; };
+		D9B39D251E043FC000BD3113 /* UIView+FPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B39D241E043FC000BD3113 /* UIView+FPAdditions.m */; };
+		D9B39D2A1E0440DB00BD3113 /* UIColor+FPColors.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B39D291E0440DB00BD3113 /* UIColor+FPColors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,10 @@
 		D9B39D1B1E04272B00BD3113 /* FPMappingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPMappingService.m; path = Mapping/FPMappingService.m; sourceTree = "<group>"; };
 		D9B39D1F1E042EB900BD3113 /* FPGoogleConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FPGoogleConstants.h; path = Common/Constants/FPGoogleConstants.h; sourceTree = "<group>"; };
 		D9B39D201E042EB900BD3113 /* FPGoogleConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FPGoogleConstants.m; path = Common/Constants/FPGoogleConstants.m; sourceTree = "<group>"; };
+		D9B39D231E043FC000BD3113 /* UIView+FPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+FPAdditions.h"; path = "Common/Categories/UIView+FPAdditions.h"; sourceTree = "<group>"; };
+		D9B39D241E043FC000BD3113 /* UIView+FPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+FPAdditions.m"; path = "Common/Categories/UIView+FPAdditions.m"; sourceTree = "<group>"; };
+		D9B39D281E0440DB00BD3113 /* UIColor+FPColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+FPColors.h"; path = "Common/Categories/UIColor/UIColor+FPColors.h"; sourceTree = "<group>"; };
+		D9B39D291E0440DB00BD3113 /* UIColor+FPColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+FPColors.m"; path = "Common/Categories/UIColor/UIColor+FPColors.m"; sourceTree = "<group>"; };
 		DBC3F41307ED1E65A8955F86 /* Pods-FindThePairs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindThePairs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindThePairs/Pods-FindThePairs.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -244,6 +250,7 @@
 		D9B39D1D1E042E9600BD3113 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D9B39D221E043F9600BD3113 /* Categories */,
 				D9B39D1E1E042E9F00BD3113 /* Constants */,
 			);
 			name = Common;
@@ -256,6 +263,33 @@
 				D9B39D201E042EB900BD3113 /* FPGoogleConstants.m */,
 			);
 			name = Constants;
+			sourceTree = "<group>";
+		};
+		D9B39D221E043F9600BD3113 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D9B39D271E0440C500BD3113 /* UIColor */,
+				D9B39D261E0440BF00BD3113 /* UIView */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		D9B39D261E0440BF00BD3113 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				D9B39D231E043FC000BD3113 /* UIView+FPAdditions.h */,
+				D9B39D241E043FC000BD3113 /* UIView+FPAdditions.m */,
+			);
+			name = UIView;
+			sourceTree = "<group>";
+		};
+		D9B39D271E0440C500BD3113 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				D9B39D281E0440DB00BD3113 /* UIColor+FPColors.h */,
+				D9B39D291E0440DB00BD3113 /* UIColor+FPColors.m */,
+			);
+			name = UIColor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,9 +432,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B39D251E043FC000BD3113 /* UIView+FPAdditions.m in Sources */,
 				D9B39D1C1E04272B00BD3113 /* FPMappingService.m in Sources */,
 				D9B39D211E042EB900BD3113 /* FPGoogleConstants.m in Sources */,
 				D9B39D091E04194A00BD3113 /* FPGameViewController.m in Sources */,
+				D9B39D2A1E0440DB00BD3113 /* UIColor+FPColors.m in Sources */,
 				D9B39CE71E040F8E00BD3113 /* FPAppDelegate.m in Sources */,
 				D9B39D121E041B9A00BD3113 /* FPPairItem.m in Sources */,
 				D9B39D0D1E041B5D00BD3113 /* FPGameViewControllerDataSource.m in Sources */,
@@ -536,6 +572,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "26133c25-5b48-45ec-baff-aedfc87f49eb";
 				PROVISIONING_PROFILE_SPECIFIER = UniversalDev;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -554,6 +591,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "ddfa92e1-9e3f-4d2f-bdca-e22560637b0f";
 				PROVISIONING_PROFILE_SPECIFIER = UniversalAdHoc;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -67,6 +67,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asdf" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1D-hI-0Cq">
+                                <rect key="frame" x="16" y="505" width="343" height="162"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -74,20 +80,28 @@
                             <constraint firstAttribute="trailing" secondItem="NPO-Tg-lQt" secondAttribute="trailing" constant="16" id="9Sp-UT-amO"/>
                             <constraint firstItem="NPO-Tg-lQt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="FPW-U6-Vai"/>
                             <constraint firstItem="Gug-Lx-ojl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="JG4-li-hcZ"/>
+                            <constraint firstAttribute="trailing" secondItem="B1D-hI-0Cq" secondAttribute="trailing" constant="16" id="PR2-BJ-iQz"/>
                             <constraint firstItem="lbp-BI-mDK" firstAttribute="top" secondItem="Gug-Lx-ojl" secondAttribute="top" id="UKM-0Q-Yf0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="B1D-hI-0Cq" secondAttribute="bottom" priority="750" id="Uxg-t8-s6u"/>
                             <constraint firstItem="5eb-Kx-jNT" firstAttribute="leading" secondItem="lbp-BI-mDK" secondAttribute="leading" id="WCE-TO-SAc"/>
                             <constraint firstItem="Gug-Lx-ojl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lbp-BI-mDK" secondAttribute="trailing" constant="8" id="X2P-xw-Zqa"/>
+                            <constraint firstItem="B1D-hI-0Cq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" priority="500" id="abF-R4-qS3"/>
                             <constraint firstItem="lbp-BI-mDK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="csC-Ye-GOl"/>
                             <constraint firstItem="Gug-Lx-ojl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5eb-Kx-jNT" secondAttribute="trailing" constant="8" id="eAL-Vk-7Zo"/>
+                            <constraint firstItem="B1D-hI-0Cq" firstAttribute="top" secondItem="NPO-Tg-lQt" secondAttribute="bottom" priority="750" id="eLM-c3-n7p"/>
+                            <constraint firstItem="B1D-hI-0Cq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fMQ-uL-2Hu"/>
                             <constraint firstAttribute="trailing" secondItem="Gug-Lx-ojl" secondAttribute="trailing" constant="16" id="fjt-5C-0j6"/>
                             <constraint firstItem="5eb-Kx-jNT" firstAttribute="top" secondItem="lbp-BI-mDK" secondAttribute="bottom" id="hzh-xd-5Jo"/>
                             <constraint firstItem="5eb-Kx-jNT" firstAttribute="bottom" secondItem="Gug-Lx-ojl" secondAttribute="bottom" id="kJY-5k-Akc"/>
                             <constraint firstItem="NPO-Tg-lQt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vj6-jb-7Aw"/>
+                            <constraint firstItem="B1D-hI-0Cq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="wp0-Qx-Vjs"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="attemptsCountLabel" destination="5eb-Kx-jNT" id="mqb-yr-LiT"/>
                         <outlet property="collectionView" destination="NPO-Tg-lQt" id="QRo-JW-RaZ"/>
+                        <outlet property="fadingLabel" destination="B1D-hI-0Cq" id="16m-vD-SvZ"/>
+                        <outlet property="fadingLabelCenterY" destination="abF-R4-qS3" id="kIo-RA-BW3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -22,7 +22,10 @@ static NSTimeInterval const kSelectionDuration = 1.0;
 @property (nonatomic, copy) FPGameViewControllerDataSourceEmptyCallback pairSelectCallback;
 @property (nonatomic, copy) FPGameViewControllerDataSourceEmptyCallback pairMatchCallback;
 @property (nonatomic, copy) FPGameViewControllerDataSourceEmptyCallback gameOverCallback;
+@property (nonatomic, copy) FPGameViewControllerDataSourceEmptyCallback pairNotMatchCallback;
 @property (nonatomic, strong) NSArray <FPPairItem *> *pairItems;
+
+@property (nonatomic, assign) NSInteger totalMatchesFound;
 @end
 
 @implementation FPGameViewControllerDataSource
@@ -32,11 +35,13 @@ static NSTimeInterval const kSelectionDuration = 1.0;
                                          fetchCompletionCallback:(FPGameViewControllerDataSourceEmptyCallback)fetchCompletionCallback
                                               pairSelectCallback:(FPGameViewControllerDataSourceEmptyCallback)pairSelectCallback
                                                pairMatchCallback:(FPGameViewControllerDataSourceEmptyCallback)pairMatchCallback
+                                            pairNotMatchCallback:(FPGameViewControllerDataSourceEmptyCallback)pairNotMatchCallback
                                                 gameOverCallback:(FPGameViewControllerDataSourceEmptyCallback)gameOverCallback {
     return [[self alloc] initWithCollectionView:collectionView
                         fetchCompletionCallback:fetchCompletionCallback
                              pairSelectCallback:pairSelectCallback
                               pairMatchCallback:pairMatchCallback
+                           pairNotMatchCallback:pairNotMatchCallback
                                gameOverCallback:gameOverCallback];
 }
 
@@ -44,12 +49,15 @@ static NSTimeInterval const kSelectionDuration = 1.0;
                fetchCompletionCallback:(FPGameViewControllerDataSourceEmptyCallback)fetchCompletionCallback
                     pairSelectCallback:(FPGameViewControllerDataSourceEmptyCallback)pairSelectCallback
                      pairMatchCallback:(FPGameViewControllerDataSourceEmptyCallback)pairMatchCallback
+                  pairNotMatchCallback:(FPGameViewControllerDataSourceEmptyCallback)pairNotMatchCallback
                       gameOverCallback:(FPGameViewControllerDataSourceEmptyCallback)gameOverCallback {
     self = [super init];
     if (self) {
+        self.totalMatchesFound = 0;
         self.collectionView = collectionView;
         self.pairSelectCallback = pairSelectCallback;
         self.pairMatchCallback = pairMatchCallback;
+        self.pairNotMatchCallback = pairNotMatchCallback;
         self.gameOverCallback = gameOverCallback;
         self.fetchCompletionCallback = fetchCompletionCallback;
         [self configureCollectionView];
@@ -126,13 +134,14 @@ static NSTimeInterval const kSelectionDuration = 1.0;
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     NSArray <NSIndexPath *> *selectedIndexPaths = [collectionView indexPathsForSelectedItems];
     if (selectedIndexPaths.count == 2) {
+        BOOL matchFount = [self.pairItems[selectedIndexPaths.firstObject.row] isEqual:self.pairItems[selectedIndexPaths.lastObject.row]];
+
         collectionView.userInteractionEnabled = NO;
-        if (self.itemSelectCallback) {
-            self.itemSelectCallback();
+        if (self.pairSelectCallback) {
+            self.pairSelectCallback();
         }
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(kSelectionDuration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            BOOL matchFount = [self.pairItems[selectedIndexPaths.firstObject.row] isEqual:self.pairItems[selectedIndexPaths.lastObject.row]];
             for (NSIndexPath *indexPath in selectedIndexPaths) {
                 [collectionView deselectItemAtIndexPath:indexPath animated:YES];
                 if (matchFount) {
@@ -142,6 +151,17 @@ static NSTimeInterval const kSelectionDuration = 1.0;
             }
             collectionView.userInteractionEnabled = YES;
         });
+        
+        if (matchFount) {
+            self.pairMatchCallback();
+            self.totalMatchesFound += 1;
+        } else {
+            self.pairNotMatchCallback();
+        }
+        
+        if (self.totalMatchesFound == self.pairItems.count / 2) {
+            self.gameOverCallback();
+        }
     }
 }
 
